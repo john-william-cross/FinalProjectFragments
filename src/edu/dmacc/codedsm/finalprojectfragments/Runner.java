@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+
 public class Runner {
 
     public static void main(String[] args) throws IOException {
@@ -22,13 +23,14 @@ public class Runner {
             FileReader inputFile = new FileReader(fileName);
             BufferedReader bufferReader = new BufferedReader(inputFile);
             String line;
+
+
             while ((line = bufferReader.readLine()) != null) {
                 Integer firstChar = line.indexOf(0);
-                String restOfString = line.substring(1);
+                String restOfString = line.substring(2, line.length()-1);
                 hmap.put(firstChar, restOfString);
-                System.out.println(hmap);
-            }
 
+            }
             bufferReader.close();
         } catch (Exception e) {
         }
