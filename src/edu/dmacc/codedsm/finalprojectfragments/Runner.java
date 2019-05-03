@@ -35,7 +35,7 @@ public class Runner {
                 String restOfString = line.substring(1);
                 hmap.put(firstChar, restOfString);
             }
-            //Close the buffer reader
+            //Close the buffer readerpu
             bufferReader.close();
             } catch (Exception e) {
         }
