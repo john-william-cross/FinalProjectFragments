@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bfa27f0c-30bc-4d78-850f-e24436be6bae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalProjectFragments/edu/dmacc/codedsm/finalprojectfragments/DisplayEmployeeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalProjectFragments/edu/dmacc/codedsm/finalprojectfragments/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalProjectFragments/edu/dmacc/codedsm/finalprojectfragments/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/DisplayEmployeeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/Runner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,20 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/DisplayEmployeeInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="221">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,10 +85,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="727" />
-    <option name="y" value="1" />
-    <option name="width" value="1025" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-69" />
+    <option name="y" value="4" />
+    <option name="width" value="1356" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -104,12 +96,37 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FinalProjectFragments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProjectFragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProjectFragments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProjectFragments" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProjectFragments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProjectFragments" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="finalprojectfragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556835751637" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556891483198" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -166,16 +183,18 @@
       <workItem from="1556647412035" duration="1587000" />
       <workItem from="1556664403863" duration="19582000" />
       <workItem from="1556888276139" duration="134000" />
+      <workItem from="1556888436239" duration="3057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21303000" />
+    <option name="totallyTimeSpent" value="24360000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="727" y="1" width="1025" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2713348" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -184,7 +203,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35995623" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30444205" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -192,7 +211,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32932165" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32822758" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32917964" />
@@ -217,25 +236,8 @@
     <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/HashMap.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/File.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.java" />
-    <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/DisplayEmployeeInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/initial_load.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -244,8 +246,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/DisplayEmployeeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/dmacc/codedsm/finalprojectfragments/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
