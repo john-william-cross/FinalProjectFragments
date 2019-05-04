@@ -45,7 +45,7 @@ public class Runner {
         boolean isRunning = true;
         Scanner scanner = new Scanner(System.in);
         while (isRunning) {
-            System.out.println("Press 1 to list all employees. Press 2 to exit program.");
+            System.out.println("Press 1 to list all employees. Press 2 to update employee hours worked. Press 3 to process payroll. Press 4 to exit program.");
             String listEmployeesOrNot = scanner.next();
             {
                 if (listEmployeesOrNot.equals("1")) {
@@ -66,7 +66,7 @@ public class Runner {
                                 + e.getMessage());
                     }
                     isRunning = false;
-                } else if (listEmployeesOrNot.equals("2")) {
+                } else if (listEmployeesOrNot.equals("4")) {
                     isRunning = false;
                 } else isRunning = true;
             }
