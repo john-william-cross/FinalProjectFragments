@@ -26,9 +26,12 @@ public class Runner {
 
 
             while ((line = bufferReader.readLine()) != null) {
-                Integer firstChar = line.indexOf(0);
-                String restOfString = line.substring(2, line.length()-1);
-                hmap.put(firstChar, restOfString);
+                String array1[] = line.split(",", 2);
+                for (String splitLine : array1) {
+                    System.out.println(splitLine);
+
+                }
+
 
             }
             bufferReader.close();
@@ -50,7 +53,10 @@ public class Runner {
                         BufferedReader bufferReader = new BufferedReader(inputFile);
                         String line;
                         while ((line = bufferReader.readLine()) != null) {
-                            System.out.println("Data is: " + line + ", 0");
+                            String array1[] = line.split(",", 2);
+                            for (String splitLine : array1) {
+                                System.out.println(splitLine);
+                            }
                         }
                         bufferReader.close();
                     } catch (Exception e) {
