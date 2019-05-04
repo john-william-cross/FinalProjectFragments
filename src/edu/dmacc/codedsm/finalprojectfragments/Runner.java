@@ -61,11 +61,17 @@ public class Runner {
                         while ((line = bufferReader.readLine()) != null) {
 
                             String array1[] = line.split(",", 3);
+                            System.out.println("Employee id number: " + array1[0]);
+                            System.out.println("Employee name: " + array1[1]);
+                            System.out.println("Employee hourly rate: " + array1[2]);
+                            System.out.println();
+
+                            //Double employeeRate = Double.parseDouble(stringEmployeeRate);
 
 
-                            for (String temp : array1) {
-                                System.out.println(temp + hoursWorked);
-                            }
+                           /* for (String employeeList : array1) {
+                                System.out.println(employeeList);
+                            }*/
                         }
                         bufferReader.close();
                     } catch (Exception e) {
