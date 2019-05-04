@@ -1,16 +1,17 @@
 package edu.dmacc.codedsm.finalprojectfragments;
 
-import javax.sound.sampled.Line;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import static java.lang.Integer.parseInt;
+
 
 public class Runner {
-   static HashMap<String, String> hmap = new HashMap<>();
-   static Integer hoursWorked = 0;
+    static HashMap<String, String> hmap = new HashMap<>();
+    static Integer hoursWorked = 0;
 
     public static void main(String[] args) throws IOException {
 
@@ -18,6 +19,7 @@ public class Runner {
         promptToDisplay();
 
     }
+
     public static void addToHashMap() {
 
         String fileName = "initial_load.txt";
@@ -28,14 +30,15 @@ public class Runner {
 
 
             while ((line = bufferReader.readLine()) != null) {
-            String firstChar = line.substring(0,line.indexOf(","));
-            String restOfString = line.substring(line.indexOf(",") + 1);
-            restOfString = restOfString + ", " + hoursWorked;
-            hmap.put(firstChar, restOfString);
+                String firstChar = line.substring(0, line.indexOf(","));
+                String restOfString = line.substring(line.indexOf(",") + 1);
+                restOfString = restOfString + ", " + hoursWorked;
+                hmap.put(firstChar, restOfString);
 
             }
-           System.out.println(hmap);
-            System.out.println();
+            //System.out.println(hmap);
+            //System.out.println(hmap.values());
+            //System.out.println();
             bufferReader.close();
         } catch (Exception e) {
         }
@@ -71,10 +74,15 @@ public class Runner {
                 } else if (userAnswer.equals("2")) {
                     System.out.println("Enter employee ID number: ");
                     String numberEntered = scanner.next();
-                    if (hmap.containsKey(numberEntered)){
+                    if (hmap.containsKey(numberEntered)) {
                         System.out.println("Update employee hours by entering hours worked: ");
                         String updatedHoursEntered = scanner.next();
                         hmap.put(numberEntered, updatedHoursEntered);
+                        Double myDouble = Double.parseDouble(updatedHoursEntered);
+                        //System.out.println(myDouble);
+
+
+
                         System.out.println(hmap);
                     } else {
                         System.out.println("Employee not found.");
