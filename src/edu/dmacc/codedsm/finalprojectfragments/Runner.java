@@ -1,5 +1,6 @@
 package edu.dmacc.codedsm.finalprojectfragments;
 
+import javax.sound.sampled.Line;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -10,6 +11,9 @@ import java.util.Scanner;
 public class Runner {
 
     public static void main(String[] args) throws IOException {
+
+
+
         addToHashMap();
         promptToDisplay();
 
@@ -17,7 +21,7 @@ public class Runner {
     }
 
     public static void addToHashMap() {
-        HashMap<Integer, String> hmap = new HashMap<>();
+        HashMap<String, String> hmap = new HashMap<>();
         String fileName = "initial_load.txt";
         try {
             FileReader inputFile = new FileReader(fileName);
@@ -26,14 +30,12 @@ public class Runner {
 
 
             while ((line = bufferReader.readLine()) != null) {
-                String array1[] = line.split(",", 2);
-                for (String splitLine : array1) {
-                    System.out.println(splitLine);
-
-                }
-
+            String firstChar = line.substring(0,line.indexOf(","));
+            String restOfString = line.substring(line.indexOf(",") + 1);
+            hmap.put(firstChar, restOfString);
 
             }
+            //System.out.println(hmap);
             bufferReader.close();
         } catch (Exception e) {
         }
@@ -53,9 +55,9 @@ public class Runner {
                         BufferedReader bufferReader = new BufferedReader(inputFile);
                         String line;
                         while ((line = bufferReader.readLine()) != null) {
-                            String array1[] = line.split(",", 2);
-                            for (String splitLine : array1) {
-                                System.out.println(splitLine);
+                            String array1[] = line.split(",", 3);
+                            for (String temp : array1) {
+                                System.out.println(temp);
                             }
                         }
                         bufferReader.close();
