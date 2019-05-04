@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 
 public class Runner {
+   static HashMap<String, String> hmap = new HashMap<>();
 
     public static void main(String[] args) throws IOException {
 
@@ -19,9 +20,8 @@ public class Runner {
 
 
     }
-
     public static void addToHashMap() {
-        HashMap<String, String> hmap = new HashMap<>();
+
         String fileName = "initial_load.txt";
         try {
             FileReader inputFile = new FileReader(fileName);
@@ -32,10 +32,11 @@ public class Runner {
             while ((line = bufferReader.readLine()) != null) {
             String firstChar = line.substring(0,line.indexOf(","));
             String restOfString = line.substring(line.indexOf(",") + 1);
-            hmap.put(firstChar, restOfString);
+            hmap.put(firstChar, restOfString + ", hours worked: 0");
 
             }
-            //System.out.println(hmap);
+            System.out.println(hmap);
+            System.out.println();
             bufferReader.close();
         } catch (Exception e) {
         }
@@ -46,9 +47,9 @@ public class Runner {
         Scanner scanner = new Scanner(System.in);
         while (isRunning) {
             System.out.println("Press 1 to list all employees. Press 2 to update employee hours worked. Press 3 to process payroll. Press 4 to exit program.");
-            String listEmployeesOrNot = scanner.next();
+            String userAnswer = scanner.next();
             {
-                if (listEmployeesOrNot.equals("1")) {
+                if (userAnswer.equals("1")) {
                     String fileName = "initial_load.txt";
                     try {
                         FileReader inputFile = new FileReader(fileName);
@@ -66,7 +67,11 @@ public class Runner {
                                 + e.getMessage());
                     }
                     isRunning = false;
-                } else if (listEmployeesOrNot.equals("4")) {
+                } else if (userAnswer.equals("2")) {
+
+                } else if (userAnswer.equals("3")) {
+
+                } else if (userAnswer.equals("4")) {
                     isRunning = false;
                 } else isRunning = true;
             }
