@@ -30,10 +30,11 @@ public class Runner {
             while ((line = bufferReader.readLine()) != null) {
             String firstChar = line.substring(0,line.indexOf(","));
             String restOfString = line.substring(line.indexOf(",") + 1);
-            hmap.put(firstChar, restOfString + ", " + hoursWorked);
+            restOfString = restOfString + ", " + hoursWorked;
+            hmap.put(firstChar, restOfString);
 
             }
-            //System.out.println(hmap);
+           System.out.println(hmap);
             System.out.println();
             bufferReader.close();
         } catch (Exception e) {
@@ -54,7 +55,9 @@ public class Runner {
                         BufferedReader bufferReader = new BufferedReader(inputFile);
                         String line;
                         while ((line = bufferReader.readLine()) != null) {
-                            String array1[] = line.split(",", 3);
+
+                            String array1[] = line.split(",", 1);
+
                             for (String temp : array1) {
                                 System.out.println(temp);
                             }
