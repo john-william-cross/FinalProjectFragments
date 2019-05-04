@@ -10,14 +10,12 @@ import java.util.Scanner;
 
 public class Runner {
    static HashMap<String, String> hmap = new HashMap<>();
+   static Integer hoursWorked = 0;
 
     public static void main(String[] args) throws IOException {
 
-
-
         addToHashMap();
         promptToDisplay();
-
 
     }
     public static void addToHashMap() {
@@ -32,10 +30,10 @@ public class Runner {
             while ((line = bufferReader.readLine()) != null) {
             String firstChar = line.substring(0,line.indexOf(","));
             String restOfString = line.substring(line.indexOf(",") + 1);
-            hmap.put(firstChar, restOfString + ", hours worked: 0");
+            hmap.put(firstChar, restOfString + ", " + hoursWorked);
 
             }
-            System.out.println(hmap);
+            //System.out.println(hmap);
             System.out.println();
             bufferReader.close();
         } catch (Exception e) {
@@ -68,7 +66,16 @@ public class Runner {
                     }
                     isRunning = false;
                 } else if (userAnswer.equals("2")) {
-
+                    System.out.println("Enter employee ID number: ");
+                    String numberEntered = scanner.next();
+                    if (hmap.containsKey(numberEntered)){
+                        System.out.println("Update employee hours by entering hours worked: ");
+                        String updatedHoursEntered = scanner.next();
+                        hmap.put(numberEntered, updatedHoursEntered);
+                        System.out.println(hmap);
+                    } else {
+                        System.out.println("Employee not found.");
+                    }
                 } else if (userAnswer.equals("3")) {
 
                 } else if (userAnswer.equals("4")) {
