@@ -3,6 +3,7 @@ package edu.dmacc.codedsm.finalprojectfragments;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ import static java.lang.Integer.parseInt;
 
 public class Runner {
     static HashMap<String, String> hmap = new HashMap<>();
-    static Integer hoursWorked = 0;
+    static Double hoursWorked = 0.00d;
 
     public static void main(String[] args) throws IOException {
 
@@ -59,10 +60,11 @@ public class Runner {
                         String line;
                         while ((line = bufferReader.readLine()) != null) {
 
-                            String array1[] = line.split(",", 1);
+                            String array1[] = line.split(",", 3);
+
 
                             for (String temp : array1) {
-                                System.out.println(temp);
+                                System.out.println(temp + hoursWorked);
                             }
                         }
                         bufferReader.close();
@@ -80,15 +82,20 @@ public class Runner {
                         hmap.put(numberEntered, updatedHoursEntered);
                         Double myDouble = Double.parseDouble(updatedHoursEntered);
                         //System.out.println(myDouble);
+                        //Doulbe netPay =  myDouble * getEmployeWageSomehow / 1.2
 
 
 
-                        System.out.println(hmap);
+                        //System.out.println(hmap);
                     } else {
                         System.out.println("Employee not found.");
                     }
                 } else if (userAnswer.equals("3")) {
-
+                    System.out.println("To process payroll for an employee, enter employee ID number: ");
+                    String numberEntered = scanner.next();
+                    if(hmap.containsKey(numberEntered)) {
+                        System.out.println(hmap.get(numberEntered));
+                    }
                 } else if (userAnswer.equals("4")) {
                     isRunning = false;
                 } else isRunning = true;
