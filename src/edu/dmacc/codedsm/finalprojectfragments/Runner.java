@@ -11,8 +11,8 @@ public class Runner {
     static HashMap<String, String> hmap = new HashMap<>();
     static Double hoursWorked = 0.00d;
     static Double myDouble;
-    static String updatedHoursEntered;
-    static Double employeeRate;
+    static String updatedHoursEntered;       //put these into employee class
+    static Double employeeRate;              //put these into employee class
     static String array1[];
 
     public static void main(String[] args) throws IOException {
@@ -70,7 +70,6 @@ public class Runner {
                             System.out.println("Employee hourly rate: " + array1[2]);
                             System.out.println("Hours worked: " + hoursWorked);
                             System.out.println();
-
                         }
                         bufferReader.close();
                     } catch (Exception e) {
@@ -88,11 +87,11 @@ public class Runner {
                         while ((line = bufferReader.readLine()) != null) {
 
                             String array1[] = line.split(",", 3);
-
+                            System.out.println(array1);
                             System.out.println("Enter employee ID number: ");
                             String numberEntered = scanner.next();
                             if (hmap.containsKey(numberEntered)) {
-                                Double employeeRate = Double.parseDouble(array1[0]);
+                                Double employeeRate = Double.parseDouble(array1[2]);
                                 System.out.println("Update employee hours by entering hours worked: ");
                                 String updatedHoursEntered = scanner.next();
                                 hmap.put(numberEntered, updatedHoursEntered);
@@ -100,7 +99,6 @@ public class Runner {
                                 Double netPay = (myDouble * employeeRate) / 1.2;
                                 System.out.println("Employee's net pay is : " + netPay);
                                 break;
-
 
                                 //System.out.println(hmap);
                             } else {
@@ -129,7 +127,8 @@ public class Runner {
                     } else isRunning = true;
                 }
             }
-        }
-    }
-}
+        }                 //make a file reader service (class with a method) that reads values and stores them into a repository or a hashmap
+                                    //if 2 is pressed, get the employee from the hashmap, do the updates, then store it back in the hashmap
+    }                     //have an employee class that has the values and getters and setters
+}                         //put option 1 and 2 together, option 3 is a service that gets info and returns payroll
 
