@@ -128,7 +128,7 @@ public class Runner {
                 }
             }
         }                 //make a file reader service (class with a method) that reads values and stores them into a repository or a hashmap
-                                    //if 2 is pressed, get the employee from the hashmap, do the updates, then store it back in the hashmap
+        //if 2 is pressed, get the employee from the hashmap, do the updates, then store it back in the hashmap
     }                     //have an employee class that has the values and getters and setters
 }                         //put option 1 and 2 together, option 3 is a service that gets info and returns payroll
 
