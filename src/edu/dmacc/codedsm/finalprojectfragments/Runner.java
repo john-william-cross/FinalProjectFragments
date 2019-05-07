@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import static edu.dmacc.codedsm.finalprojectfragments.DataLoaderController.addToHashMap;
+
 
 public class Runner {
     static HashMap<String, String> hmap = new HashMap<>();
@@ -22,29 +24,7 @@ public class Runner {
 
     }
 
-    public static void addToHashMap() {
 
-        String fileName = "initial_load.txt";
-        try {
-            FileReader inputFile = new FileReader(fileName);
-            BufferedReader bufferReader = new BufferedReader(inputFile);
-            String line;
-
-
-            while ((line = bufferReader.readLine()) != null) {
-                String firstChar = line.substring(0, line.indexOf(","));
-                String restOfString = line.substring(line.indexOf(",") + 1);
-                restOfString = restOfString + ", " + hoursWorked;
-                hmap.put(firstChar, restOfString);
-
-            }
-            //System.out.println(hmap);
-            //System.out.println(hmap.values());
-            //System.out.println();
-            bufferReader.close();
-        } catch (Exception e) {
-        }
-    }
 
     public static void promptToDisplay() throws IOException {
         boolean isRunning = true;
