@@ -3,8 +3,18 @@ package edu.dmacc.codedsm.finalprojectfragments;
 public class Employee {
     private String idNumber;
     private String name;
-    private String hourlyRate;
-    private String hoursWorked;
+    private Double hourlyRate;
+    private Double hoursWorked;
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "idNumber='" + idNumber + '\'' +
+                ", name='" + name + '\'' +
+                ", hourlyRate=" + hourlyRate +
+                ", hoursWorked=" + hoursWorked +
+                '}';
+    }
 
     public String getIdNumber() {
         return idNumber;
@@ -22,19 +32,19 @@ public class Employee {
         this.name = name;
     }
 
-    public String getHourlyRate() {
+    public Double getHourlyRate() {
         return hourlyRate;
     }
 
-    public void setHourlyRate(String hourlyRate) {
+    public void setHourlyRate( Double hourlyRate ) {
         this.hourlyRate = hourlyRate;
     }
 
-    public String getHoursWorked() {
+    public Double getHoursWorked() {
         return hoursWorked;
     }
 
-    public void setHoursWorked(String hoursWorked) {
+    public void setHoursWorked( Double hoursWorked ) {
         this.hoursWorked = hoursWorked;
     }
 }

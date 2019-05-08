@@ -1,4 +1,4 @@
 package edu.dmacc.codedsm.finalprojectfragments;
 
-public class EmployeeView {
+public class  EmployeeView {
 }
