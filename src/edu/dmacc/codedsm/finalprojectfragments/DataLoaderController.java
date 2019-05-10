@@ -7,5 +7,5 @@ public class DataLoaderController {
         DataLoaderService.readFile();
     }
 
-
+    EmployeeRepository employeeRepository = new EmployeeRepository();
 }

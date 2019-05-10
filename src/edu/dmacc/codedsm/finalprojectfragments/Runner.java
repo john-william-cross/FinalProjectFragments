@@ -12,14 +12,13 @@ public class Runner {
     static String array1[];
 
     public static void main(String[] args) throws IOException {
+        EmployeeRepository employeeRepository = new EmployeeRepository();
         DataLoaderController.loadEmployeeData();
-
-
-        promptToDisplay();
+        displayUserOptions();
 
     }
 
-    public static void promptToDisplay() throws IOException {
+    public static void displayUserOptions() throws IOException {
         boolean isRunning = true;
         Scanner scanner = new Scanner(System.in);
         while (isRunning) {
@@ -65,8 +64,24 @@ public class Runner {
 //                            String array1[] = line.split(",", 3);
 //                            System.out.println(array1);
                     System.out.println("Enter employee ID number: ");
-                    String numberEntered = scanner.next();
-//
+                    String id = scanner.next();
+
+
+
+                    System.out.println("Enter hours worked: ");
+                    Double hoursWorked = scanner.nextDouble();
+                    EmployeeRepository.getEmployee(id).setHoursWorked(hoursWorked);
+                    Employee theEmployee = EmployeeRepository.getEmployee(id);
+                    theEmployee.setHoursWorked(hoursWorked);
+                    EmployeeRepostiory.save(theEmployee);
+
+
+
+
+                    EmployeeRepository.getEmployee(id).getHourlyRate();
+                    Double netPay = hoursWorked * EmployeeRepository.getEmployee(id).getHourlyRate() / 1.2;
+                    System.out.println(netPay);
+
 //                    if (employees.containsKey(numberEntered)) {
 //                        System.out.println("Enter hours worked: ");
 //                        Double hoursEntered = scanner.nextDouble();

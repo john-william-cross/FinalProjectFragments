@@ -9,8 +9,8 @@ public class EmployeeController {
     public static Collection<Employee> gatherEmployees() {
         return EmployeeService.gatherEmployees();
 
-
-    }
+            }
+    EmployeeRepository employeeRepository = new EmployeeRepository();
 }
 
 

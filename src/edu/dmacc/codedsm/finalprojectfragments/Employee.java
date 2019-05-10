@@ -4,7 +4,7 @@ public class Employee {
     private String idNumber;
     private String name;
     private Double hourlyRate;
-    private Double hoursWorked;
+    private static Double hoursWorked;
 
     @Override
     public String toString() {
